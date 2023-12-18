@@ -1,0 +1,65 @@
+{
+  "01": {
+    "description": "Retard absence non rémunéré",
+    "détails": [
+      "Retard"
+    ]
+  },
+  "04": {
+    "description": "Grève Afpa",
+    "détails": [
+      "Grève Afpa"
+    ]
+  },
+  "05": {
+    "description": "Maladie",
+    "détails": [
+      "Maladie"
+    ]
+  },
+  "06": {
+    "description": "Absence Légale",
+    "détails": [
+      "Naissance ou adoption (3 jours)",
+      "Mariage (4 jours)",
+      "Mariage d’un enfant (1 jour)",
+      "Décès du conjoint ou du partenaire lié par un pacte civil de solidarité ou d’un enfant (2 jours)",
+      "Décès du père, de la mère, du beau-père, de la belle-mère, d'un frère ou d'une sœur (1 jour)",
+      "Visite médicale obligatoire de la grossesse",
+      "Stagiaire élu membre du CA d’une caisse de sécurité sociale"
+    ]
+  },
+  "20-21-30-31-40-41": {
+    "description": "Accident",
+    "détails": [
+      "Accident travail sans arrêt",
+      "Accident travail avec arrêt",
+      "Accident trajet sans arrêt",
+      "Accident trajet avec arrêt",
+      "Accident travail hors Afpa sans arrêt",
+      "Accident travail hors Afpa avec arrêt"
+    ]
+  },
+  "98": {
+    "description": "Absence autorisée non rémunérée",
+    "détails": [
+      "Recherche PE",
+      "Recherche d’un emploi",
+      "Visite d’un salon",
+      "Enquête en entreprise",
+      "Visite d’un autre centre",
+      "RDV psychologue du travail",
+      "Rendez-vous POLE EMPLOI",
+      "Absence pour fêtes religieuses hors jours fériés légaux",
+      "Grève des transports",
+      "Intempéries",
+      "Rdv avec le conseiller militaire",
+      "Rdv avec le juge, Convocation au tribunal ou commissariat",
+      "Recherche de logement, Rdv organismes divers"
+    ]
+  },
+  "99": {
+    "description": "Absence non autorisée non rémunérée",
+    "détails": []
+  }
+}

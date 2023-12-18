@@ -1,0 +1,33 @@
+body{
+    width: 1024px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    img {
+        height: 80px;
+    }
+    h1{
+        color: green;
+    }
+    h1::after {
+        content: "";
+        display: flex;
+        width: 200%;
+        margin-top: 5px;
+        border-top: solid 1px green;
+    }
+}
+.info_perso{
+    display: flex;
+    justify-content: space-between;
+}
+.info_date{
+    h2{
+        color: blue;
+    }
+    p{
+        color: blue;
+    }
+}

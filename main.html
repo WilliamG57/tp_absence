@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" style="style.css" href="style.css">
+    <title>Autorisation d'absence</title>
+</head>
+<body>
+<header>
+    <h1 class="title">Autorisation d'Absence</h1>
+    <img src="images/Couleur-logo-AFPA.jpg" alt="logo_afpa">
+</header>
+<form action="" method="post" class="form_base">
+    <div class="info_perso">
+        <label for="nom">Nom : </label>
+        <input type="text" name="name" id="nom" required/>
+        <label for="prenom">Prénom : </label>
+        <input type="text" name="prenom" id="prenom" required/>
+        <label for="formation">Formation suivi : </label>
+        <input type="text" name="formation" id="formation" required/>
+    </div>
+    <div class="info_date">
+        <h2 class="info_date_title">Demande l'autorisation de s'absenter du centre :</h2>
+        <label><input type="checkbox" name="heure" />Quelques heures</label>
+        <label><input type="checkbox" name="jours" />Quelques jours</label>
+        <p class="info_date_select">Sélectionner la date et/ou l'heure qui convient :</p>
+        <input type="date" name="date" class="date" />
+        <input type="time" name="time" class="time"/>
+        <input type="date" name="date" class="date" />
+        <input type="time" name="time" class="time" />
+    </div>
+</form>
+</body>
+</html>
