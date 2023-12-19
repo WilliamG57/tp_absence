@@ -1,25 +1,26 @@
 {
+
   "01": {
     "description": "Retard absence non rémunéré",
-    "détails": [
+    "details": [
       "Retard"
     ]
   },
   "04": {
     "description": "Grève Afpa",
-    "détails": [
+    "details": [
       "Grève Afpa"
     ]
   },
   "05": {
     "description": "Maladie",
-    "détails": [
+    "details": [
       "Maladie"
     ]
   },
   "06": {
     "description": "Absence Légale",
-    "détails": [
+    "details": [
       "Naissance ou adoption (3 jours)",
       "Mariage (4 jours)",
       "Mariage d’un enfant (1 jour)",
@@ -31,7 +32,7 @@
   },
   "20-21-30-31-40-41": {
     "description": "Accident",
-    "détails": [
+    "details": [
       "Accident travail sans arrêt",
       "Accident travail avec arrêt",
       "Accident trajet sans arrêt",
@@ -42,7 +43,7 @@
   },
   "98": {
     "description": "Absence autorisée non rémunérée",
-    "détails": [
+    "details": [
       "Recherche PE",
       "Recherche d’un emploi",
       "Visite d’un salon",
@@ -60,6 +61,6 @@
   },
   "99": {
     "description": "Absence non autorisée non rémunérée",
-    "détails": []
+    "details": []
   }
 }

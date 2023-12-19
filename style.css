@@ -1,16 +1,24 @@
-body{
-    width: 1024px;
+body {
+    max-width: 1024px;
+    width: 100%;
 }
 
-header{
+h2 {
+    color: blue;
+}
+
+header {
     display: flex;
     justify-content: space-between;
+
     img {
         height: 80px;
     }
-    h1{
+
+    h1 {
         color: green;
     }
+
     h1::after {
         content: "";
         display: flex;
@@ -19,15 +27,39 @@ header{
         border-top: solid 1px green;
     }
 }
-.info_perso{
-    display: flex;
-    justify-content: space-between;
+
+.form_base {
+    width: 100%;
 }
-.info_date{
-    h2{
-        color: blue;
-    }
-    p{
-        color: blue;
-    }
+
+.info_perso {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    padding: 10px 10px 0 10px;
+}
+
+.info_perso_details {
+    padding-right: 15px;
+}
+
+.info_date {
+    padding: 0 0 10px 10px;
+}
+
+fieldset {
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+legend{
+    color: blue;
+}
+
+h3 {
+    background-color: rgb(201, 196, 196);
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.field_motif {
+    background-color: antiquewhite;
 }
