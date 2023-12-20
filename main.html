@@ -10,41 +10,41 @@
     <h1 class="title">Autorisation d'Absence</h1>
     <img src="images/Couleur-logo-AFPA.jpg" alt="logo_afpa">
 </header>
-<fieldset>
-    <legend>Identification :</legend>
 <form action="" method="post" class="form_base">
-    <div class="info_perso">
-        <label for="nom" class="info_perso_details">Nom :
-        <input type="text" name="name" id="nom" required/></label>
-        <label for="prenom" class="info_perso_details">Prénom :
-        <input type="text" name="prenom" id="prenom" required/></label>
-        <label for="formation" class="info_perso_details">Formation suivi :
-        <input type="text" name="formation" id="formation" required/></label>
-    </div>
-    <div class="info_date">
-        <h2 class="info_date_title">Demande l'autorisation de s'absenter du centre :</h2>
-        <p class="info_date_select">Sélectionner la date ou l'heure qui convient :</p>
-        <div class="view_date">
-            <label><input type="checkbox" name="jours"/> Quelques jours  </label>
-            <input type="date" name="date" class="date"/>
-            <input type="date" name="date" class="date"/>
-            <label for="jours_absent">Jours absent :
-            <input type="number" name="jours_absent" id="jours_absent" required/></label>
+    <fieldset>
+        <legend>Identification :</legend>
+        <div class="info_perso">
+            <label for="nom" class="info_perso_details">Nom :
+                <input type="text" name="name" id="nom" required/></label>
+            <label for="prenom" class="info_perso_details">Prénom :
+                <input type="text" name="prenom" id="prenom" required/></label>
+            <label for="formation" class="info_perso_details">Formation suivi :
+                <input type="text" name="formation" id="formation" required/></label>
         </div>
-        <div class="view_heure">
-            <label><input type="checkbox" name="heure"/> Quelques heures  </label>
-            <input type="time" name="time" class="time"/>
-            <input type="time" name="time" class="time"/>
+        <div class="info_date">
+            <h2 class="info_date_title">Demande l'autorisation de s'absenter du centre :</h2>
+            <p class="info_date_select">Sélectionner la date ou l'heure qui convient :</p>
+            <div class="view_date">
+                <label><input type="checkbox" name="jours"/> Quelques jours </label>
+                <input type="date" name="date" class="date_1"/>
+                <input type="date" name="date" class="date_2"/>
+                <label for="jours_absent">Jours absent :
+                    <input type="number" name="jours_absent" id="jours_absent" required/></label>
+            </div>
+            <div class="view_heure">
+                <label><input type="checkbox" name="heure"/> Quelques heures </label>
+                <input type="time" name="time" class="time_1"/>
+                <input type="time" name="time" class="time_2"/>
+            </div>
         </div>
-    </div>
+    </fieldset>
+    <fieldset class="field_motif">
+        <legend>Pour le motif suivant :</legend>
+        <section id="motif_absence">
+        </section>
+    </fieldset>
 </form>
-</fieldset>
-<fieldset class="field_motif">
-    <legend>Pour le motif suivant :</legend>
-<section id="motif_absence">
-
-</section>
-</fieldset>
+<button id="btn_send" type="submit">Valider</button>
 <script src="script.js"></script>
 </body>
 </html>
