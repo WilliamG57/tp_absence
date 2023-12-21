@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" style="style.css" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Autorisation d'absence</title>
 </head>
 <body>
@@ -25,10 +25,16 @@
             <h2 class="info_date_title">Demande l'autorisation de s'absenter du centre :</h2>
             <p class="info_date_select">Sélectionner la date ou l'heure qui convient :</p>
             <div class="view_date">
-                <label><input type="checkbox" name="jours"/> Quelques jours </label>
-                <input type="date" name="date" class="date_1"/>
-                <input type="date" name="date" class="date_2"/>
-                <label for="jours_absent">Jours absent :
+                <label class="jours_absent">
+                    <input type="checkbox" name="jours"/> Quelques jours
+                </label>
+                <label class="jours_absent">
+                    <input type="date" name="date" class="date_1"/>
+                </label>
+                <label class="jours_absent">
+                    <input type="date" name="date" class="date_2"/>
+                </label>
+                <label class="jours_absent" for="jours_absent">Jours absent :
                     <input type="number" name="jours_absent" id="jours_absent" required/></label>
             </div>
             <div class="view_heure">

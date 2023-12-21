@@ -91,6 +91,7 @@ document.querySelector('.date_2').addEventListener('change', calculerJoursAbsenc
 
 
 function sendToNext() {
+    localStorage.clear();
     let lastName = document.getElementById("nom").value;
     let firstName = document.getElementById("prenom").value;
     let formation = document.getElementById("formation").value;
@@ -104,10 +105,11 @@ function sendToNext() {
 
     let dateDebut = document.querySelector('.date_1').value;
     let dateFin = document.querySelector('.date_2').value;
-    let heureDebut = document.querySelector('.time_1').value
-    let heureFin = document.querySelector('.time_2').value
+    let heureDebut = document.querySelector('.time_1').value;
+    let heureFin = document.querySelector('.time_2').value;
+    let joursAbsent = document.querySelector('#jours_absent').value;
     let motifElement = document.querySelector('input[name="details"]:checked');
-    let motif = motifElement ? motifElement.value : null;
+    let motif = motifElement.value;
 
     localStorage.setItem('lastName', lastName);
     localStorage.setItem('firstName', firstName);
@@ -116,6 +118,7 @@ function sendToNext() {
     if (checkboxJours.checked) {
         localStorage.setItem('dateDebut', dateDebut);
         localStorage.setItem('dateFin', dateFin);
+        localStorage.setItem('joursAbsent', joursAbsent);
     } else if (checkboxHeures.checked) {
         localStorage.setItem('heureDebut', heureDebut)
         localStorage.setItem('heureFin', heureFin)
@@ -123,9 +126,16 @@ function sendToNext() {
     if (motif) {
         localStorage.setItem('motif', motif);
     }
-    console.log(localStorage);
+
+    let data = {};
+    for (let i = 0; i < localStorage.length; i++) {
+        let key= localStorage.key(i);
+        data[key] = localStorage.getItem(key);
+    }
+
+    localStorage.setItem('formData', JSON.stringify(data));
+    window.location.href = "./page_2.html"
 }
 
 const bouton = document.getElementById("btn_send");
 bouton.addEventListener("click", sendToNext)
-sendToNext();
